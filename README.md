@@ -18,10 +18,27 @@
 
 ---
 
-## **3\. Код на Python**
+## Код на Python
 
-| def calculate\_sum(n):    return n \* (n \+ 1) // 2try:    n \= int(input("Введіть число: "))    if n \< 0:        print("Число має бути додатнім")    else:        result \= calculate\_sum(n)        if result % 2 \== 0:            print("Сума парна:", result)        else:            print("Сума непарна:", result)except ValueError:    print("Помилка: введіть ціле число") |
-| :---- |
+```python
+def calculate_sum(n):
+    return n * (n + 1) // 2
+
+try:
+    n = int(input("Введіть число: "))
+    if n < 0:
+        print("Число має бути додатнім")
+    else:
+        result = calculate_sum(n)
+
+        if result % 2 == 0:
+            print("Сума парна:", result)
+        else:
+            print("Сума непарна:", result)
+
+except ValueError:
+    print("Помилка: введіть ціле число")
+```
 
 ### **Пояснення:**
 
